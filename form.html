@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submit form</title>
+    <link rel="stylesheet" href="form_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>JAVA Course Feedback form</h1>
+
+    <div class="feedback-form">
+        <div><b>NAME:</b></div>
+        <div class="identity" >
+            <input type="text" placeholder="First name"  value="h" id="fn">
+            <div><input type="text" placeholder="Last name"></div>
+        </div>
+
+        <div><b>EMAIL ID(Personal):</b></div>
+        <div class="identity">
+            <div><input type="email" placeholder="user@gmail.com"></div>
+        </div>
+
+        <div><b>EMAIL ID(Institutional):</b></div>
+        <div class="identity">
+            <div><input type="email" placeholder="user@kiit.com"></div>
+        </div>
+
+        <div><b>Contact No:</b></div>
+        <div class="identity">
+            <div><input type="number" placeholder="10 digits only"></div>
+        </div>
+
+        <div><b>Course Duration:</b></div>
+        <div class="identity">
+            <div><input type="number" placeholder="in months"></div>
+        </div>
+
+        <div><b>How much did you like this course:</b></div>
+        <form>
+            <input type="radio" id="feedback" name="feedback" value="best"/> Best
+            <br>
+            <input type="radio" id="feedback" name="feedback" value="good"/> Good
+            <br>
+            <input type="radio" id="feedback" name="feedback" value="average"/> Average
+            <br>
+            <input type="radio" id="feedback" name="feedback" value="worst"/> Worst
+        </form>
+        
+        <div>
+            <!-- <button><a href="thanks.html">SUBMIT FEEDBACK</a></button> -->
+            <button onclick="thanks()">SUBMIT FEEDBACK</button>
+        </div>
+    </div>
+
+    <script>
+        // let inputjs = document.getElementById("fn");
+        // let nameShow = () => {
+        //     document.write(inputjs.value);   
+        // }
+
+
+        function thanks() {
+            document.write("<h1>Thanks for your feedback</h1>");
+            document.write("<button onclick='nameShow();'>View</button>")
+            
+        }
+        let inputjs = document.getElementById("fn");
+
+        function nameShow(){
+            document.write(inputjs.value);
+       }
+
+       
+    </script>
+</body>
+</html>

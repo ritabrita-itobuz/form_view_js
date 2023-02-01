@@ -1,0 +1,35 @@
+
+h1 {
+    text-align: center;
+    /* margin-top: 80px; */
+}
+
+.feedback-form {
+    display:flex;
+    flex-flow: column;
+    margin-top: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-bottom: 30px;
+    background-color: bisque;
+}
+
+.identity {
+    display:flex;
+    flex-flow: row;
+    /* justify-content: space-evenly; */
+    column-gap: 6px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+form {
+    margin-bottom: 30px;
+}
+
+button {
+    text-align: center;
+    margin-top: 15px;
+    
+}
